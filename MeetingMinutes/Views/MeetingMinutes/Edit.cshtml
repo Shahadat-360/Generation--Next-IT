@@ -1,0 +1,339 @@
+@model MeetingMinutes.Models.MeetingMinutesViewModel
+
+@{
+    ViewData["Title"] = "Edit Meeting Minutes";
+}
+
+<h1>Edit Meeting Minutes</h1>
+
+<form asp-action="Edit" id="meetingMinutesForm">
+    <input type="hidden" asp-for="MeetingMinutesMaster.Id" />
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4>Meeting Information</h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <!-- Left Column (6) -->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="MeetingMinutesMaster.CustomerType" id="corporateRadio" value="Corporate" checked="@(Model.MeetingMinutesMaster.CustomerType == "Corporate")" />
+                                <label class="form-check-label" for="corporateRadio">Corporate</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="MeetingMinutesMaster.CustomerType" id="individualRadio" value="Individual" checked="@(Model.MeetingMinutesMaster.CustomerType == "Individual")" />
+                                <label class="form-check-label" for="individualRadio">Individual</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                                <label asp-for="MeetingMinutesMaster.CustomerId" class="control-label">Customer Name</label>
+                                <select asp-for="MeetingMinutesMaster.CustomerId" id="customerSelect" class="form-select">
+                                    <option value="">-- Select Customer --</option>
+                                </select>
+                                <span asp-validation-for="MeetingMinutesMaster.CustomerId" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label asp-for="MeetingMinutesMaster.Date" class="control-label"></label>
+                                <input asp-for="MeetingMinutesMaster.Date" class="form-control" type="date" />
+                                <span asp-validation-for="MeetingMinutesMaster.Date" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label asp-for="MeetingMinutesMaster.Time" class="control-label"></label>
+                                <input asp-for="MeetingMinutesMaster.Time" class="form-control" type="time" />
+                                <span asp-validation-for="MeetingMinutesMaster.Time" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                                <label asp-for="MeetingMinutesMaster.MeetingPlace" class="control-label"></label>
+                                <input asp-for="MeetingMinutesMaster.MeetingPlace" class="form-control" />
+                                <span asp-validation-for="MeetingMinutesMaster.MeetingPlace" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                                <label asp-for="MeetingMinutesMaster.MeetingDecision" class="control-label"></label>
+                                <textarea asp-for="MeetingMinutesMaster.MeetingDecision" class="form-control" rows="3"></textarea>
+                                <span asp-validation-for="MeetingMinutesMaster.MeetingDecision" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column (6) -->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                                <label asp-for="MeetingMinutesMaster.AttendsFromClientSide" class="control-label"></label>
+                                <textarea asp-for="MeetingMinutesMaster.AttendsFromClientSide" class="form-control" rows="3"></textarea>
+                                <span asp-validation-for="MeetingMinutesMaster.AttendsFromClientSide" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                                <label asp-for="MeetingMinutesMaster.AttendsFromHostSide" class="control-label"></label>
+                                <textarea asp-for="MeetingMinutesMaster.AttendsFromHostSide" class="form-control" rows="3"></textarea>
+                                <span asp-validation-for="MeetingMinutesMaster.AttendsFromHostSide" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                                <label asp-for="MeetingMinutesMaster.MeetingAgenda" class="control-label"></label>
+                                <textarea asp-for="MeetingMinutesMaster.MeetingAgenda" class="form-control" rows="3"></textarea>
+                                <span asp-validation-for="MeetingMinutesMaster.MeetingAgenda" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                                <label asp-for="MeetingMinutesMaster.MeetingDiscussion" class="control-label"></label>
+                                <textarea asp-for="MeetingMinutesMaster.MeetingDiscussion" class="form-control" rows="3"></textarea>
+                                <span asp-validation-for="MeetingMinutesMaster.MeetingDiscussion" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4>Products/Services</h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-5 mb-3">
+                    <div class="form-group">
+                        <label for="productServiceSelect" class="control-label">Product/Service</label>
+                        <select id="productServiceSelect" class="form-select" asp-items="Model.ProductServices">
+                            <option value="">-- Select Product/Service --</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <div class="form-group">
+                        <label for="quantity" class="control-label">Quantity</label>
+                        <input type="number" id="quantity" class="form-control" step="0.01" min="0" />
+                    </div>
+                </div>
+
+                <div class="col-md-2 mb-3">
+                    <div class="form-group">
+                        <label for="unit" class="control-label">Unit</label>
+                        <input type="text" id="unit" class="form-control" readonly />
+                    </div>
+                </div>
+
+                <div class="col-md-2 mb-3 d-flex align-items-end">
+                    <button type="button" id="addProductService" class="btn btn-success w-100">
+                        <i class="bi bi-plus"></i> Add
+                    </button>
+                </div>
+            </div>
+
+            <div class="table-responsive mt-3">
+                <table id="productServiceTable" class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Product/Service Name</th>
+                            <th>Quantity</th>
+                            <th>Unit</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.MeetingMinutesDetails == null || Model.MeetingMinutesDetails.Count == 0)
+                        {
+                            <tr id="noRecordsRow">
+                                <td colspan="5" class="text-center">No records found</td>
+                            </tr>
+                        }
+                        else
+                        {
+                            @for (var i = 0; i < Model.MeetingMinutesDetails.Count; i++)
+                            {
+                                var detail = Model.MeetingMinutesDetails[i];
+                                <tr>
+                                    <td>@(i + 1)</td>
+                                    <td>
+                                        @detail.ProductServiceName
+                                        <input type="hidden" name="MeetingMinutesDetails[@i].Id" value="@detail.Id" />
+                                        <input type="hidden" name="MeetingMinutesDetails[@i].ProductServiceId" value="@detail.ProductServiceId" />
+                                        <input type="hidden" name="MeetingMinutesDetails[@i].ProductServiceName" value="@detail.ProductServiceName" />
+                                    </td>
+                                    <td>
+                                        @detail.Quantity
+                                        <input type="hidden" name="MeetingMinutesDetails[@i].Quantity" value="@detail.Quantity" />
+                                    </td>
+                                    <td>
+                                        @detail.Unit
+                                        <input type="hidden" name="MeetingMinutesDetails[@i].Unit" value="@detail.Unit" />
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-danger delete-row"><i class="bi bi-trash"></i> Delete</button>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary"><i class="bi bi-save"></i> Save</button>
+        <a asp-action="Index" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Back to List</a>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        $(document).ready(function () {
+            // Initialize customer dropdown based on radio button
+            updateCustomerDropdown();
+
+            // Customer type radio button change
+            $('input[name="MeetingMinutesMaster.CustomerType"]').change(function () {
+                updateCustomerDropdown();
+            });
+
+            // Product/Service selection change
+            $('#productServiceSelect').change(function () {
+                var productId = $(this).val();
+                if (productId) {
+                    $.get('@Url.Action("GetProductServiceUnit", "MeetingMinutes")', { id: productId }, function (data) {
+                        $('#unit').val(data.unit || '');
+                    });
+                } else {
+                    $('#unit').val('');
+                }
+            });
+
+            // Add product/service button click
+            $('#addProductService').click(function () {
+                var productServiceId = $('#productServiceSelect').val();
+                var productServiceText = $('#productServiceSelect option:selected').text();
+                var quantity = $('#quantity').val();
+                var unit = $('#unit').val();
+
+                if (!productServiceId || !quantity) {
+                    alert('Please select a product/service and enter quantity');
+                    return;
+                }
+
+                // Remove "No records" row if it exists
+                $('#noRecordsRow').remove();
+
+                // Get current row count
+                var rowCount = $('#productServiceTable tbody tr').length;
+                
+                // Add new row
+                var newRow = `
+                    <tr>
+                        <td>${rowCount + 1}</td>
+                        <td>${productServiceText}
+                            <input type="hidden" name="MeetingMinutesDetails[${rowCount}].ProductServiceId" value="${productServiceId}">
+                            <input type="hidden" name="MeetingMinutesDetails[${rowCount}].ProductServiceName" value="${productServiceText}">
+                        </td>
+                        <td>
+                            ${quantity}
+                            <input type="hidden" name="MeetingMinutesDetails[${rowCount}].Quantity" value="${quantity}">
+                        </td>
+                        <td>
+                            ${unit}
+                            <input type="hidden" name="MeetingMinutesDetails[${rowCount}].Unit" value="${unit}">
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-danger delete-row"><i class="bi bi-trash"></i> Delete</button>
+                        </td>
+                    </tr>
+                `;
+                
+                $('#productServiceTable tbody').append(newRow);
+
+                // Clear inputs
+                $('#productServiceSelect').val('');
+                $('#quantity').val('');
+                $('#unit').val('');
+            });
+
+            // Delete row
+            $(document).on('click', '.delete-row', function () {
+                $(this).closest('tr').remove();
+                
+                // Re-index rows
+                $('#productServiceTable tbody tr').each(function (index) {
+                    $(this).find('td:first').text(index + 1);
+                    $(this).find('input[name^="MeetingMinutesDetails"]').each(function () {
+                        var name = $(this).attr('name');
+                        var newName = name.replace(/\[\d+\]/, '[' + index + ']');
+                        $(this).attr('name', newName);
+                    });
+                });
+
+                // If no rows left, add "No records" row
+                if ($('#productServiceTable tbody tr').length === 0) {
+                    $('#productServiceTable tbody').append('<tr id="noRecordsRow"><td colspan="5" class="text-center">No records found</td></tr>');
+                }
+            });
+
+            // Function to update customer dropdown
+            function updateCustomerDropdown() {
+                var customerType = $('input[name="MeetingMinutesMaster.CustomerType"]:checked').val();
+                var $customerSelect = $('#customerSelect');
+                var selectedId = '@Model.MeetingMinutesMaster.CustomerId';
+                
+                $customerSelect.empty().append('<option value="">-- Select Customer --</option>');
+
+                if (customerType === 'Corporate') {
+                    @foreach (var customer in Model.CorporateCustomers)
+                    {
+                        @:$customerSelect.append($('<option></option>').val('@customer.Value').text('@customer.Text').prop('selected', '@customer.Value' === selectedId));
+                    }
+                } else {
+                    @foreach (var customer in Model.IndividualCustomers)
+                    {
+                        @:$customerSelect.append($('<option></option>').val('@customer.Value').text('@customer.Text').prop('selected', '@customer.Value' === selectedId));
+                    }
+                }
+            }
+        });
+    </script>
+} 
