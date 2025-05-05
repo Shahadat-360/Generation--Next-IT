@@ -75,7 +75,7 @@ This application allows users to create, edit, and view meeting minutes for meet
   - MeetingMinutesController.cs - Handles all meeting minutes CRUD operations
 
 - **Models/**
-  - Customer.cs - Contains CorporateCustomer and IndividualCustomer classes
+  - Customer.cs - Contains CorporateCustomer and IndividualCustomer classes (simplified with only Id and Name)
   - MeetingMinutes.cs - Contains MeetingMinutesMaster and MeetingMinutesDetail classes
   - ProductService.cs - Represents products and services
   - MeetingMinutesViewModel.cs - ViewModel for meeting minutes forms
@@ -99,17 +99,10 @@ The application uses the following tables:
 1. **Corporate_Customer_Tbl**
    - Id (PK)
    - Name
-   - ContactPerson
-   - Email
-   - Phone
-   - Address
 
 2. **Individual_Customer_Tbl**
    - Id (PK)
    - Name
-   - Email
-   - Phone
-   - Address
 
 3. **Products_Service_Tbl**
    - Id (PK)
@@ -138,11 +131,3 @@ The application uses the following tables:
    - ProductServiceName
    - Quantity (decimal with precision 18,2)
    - Unit
-
-## License
-
-This project is licensed under the MIT License.
-
-## Contributors
-
-- Generation--Next-IT Team
