@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Hosting\\NexTGen\\",
+  "WorkspaceRootPath": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\meetingminutes\\views\\meetingminutes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\generation--next-it\\meetingminutes\\views\\meetingminutes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|solutionrelative:meetingminutes\\views\\meetingminutes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\meetingminutes\\views\\meetingminutes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\generation--next-it\\meetingminutes\\views\\meetingminutes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|solutionrelative:meetingminutes\\views\\meetingminutes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\meetingminutes\\controllers\\meetingminutescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\generation--next-it\\meetingminutes\\controllers\\meetingminutescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|solutionrelative:meetingminutes\\controllers\\meetingminutescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\meetingminutes\\migrations\\20250505093212_makefieldsnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\generation--next-it\\meetingminutes\\migrations\\20250505093212_makefieldsnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|solutionrelative:meetingminutes\\migrations\\20250505093212_makefieldsnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\meetingminutes\\migrations\\20250505103450_addstoredprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\generation--next-it\\meetingminutes\\migrations\\20250505103450_addstoredprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|solutionrelative:meetingminutes\\migrations\\20250505103450_addstoredprocedures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\meetingminutes\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\generation--next-it\\meetingminutes\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|solutionrelative:meetingminutes\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\meetingminutes\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\generation--next-it\\meetingminutes\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|solutionrelative:meetingminutes\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\meetingminutes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|d:\\hosting\\nextgen\\generation--next-it\\meetingminutes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{05EBF71D-966F-0FDC-1D82-D54F4A92ED81}|MeetingMinutes\\MeetingMinutes.csproj|solutionrelative:meetingminutes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -48,9 +48,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Views\\MeetingMinutes\\Create.cshtml",
+              "DocumentMoniker": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Views\\MeetingMinutes\\Create.cshtml",
               "RelativeDocumentMoniker": "MeetingMinutes\\Views\\MeetingMinutes\\Create.cshtml",
-              "ToolTip": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Views\\MeetingMinutes\\Create.cshtml",
+              "ToolTip": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Views\\MeetingMinutes\\Create.cshtml",
               "RelativeToolTip": "MeetingMinutes\\Views\\MeetingMinutes\\Create.cshtml",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADgAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -61,9 +61,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Views\\MeetingMinutes\\Index.cshtml",
+              "DocumentMoniker": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Views\\MeetingMinutes\\Index.cshtml",
               "RelativeDocumentMoniker": "MeetingMinutes\\Views\\MeetingMinutes\\Index.cshtml",
-              "ToolTip": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Views\\MeetingMinutes\\Index.cshtml",
+              "ToolTip": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Views\\MeetingMinutes\\Index.cshtml",
               "RelativeToolTip": "MeetingMinutes\\Views\\MeetingMinutes\\Index.cshtml",
               "ViewState": "AgIAAAQAAAAAAAAAAAAYwBYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -73,9 +73,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "20250505103450_AddStoredProcedures.cs",
-              "DocumentMoniker": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Migrations\\20250505103450_AddStoredProcedures.cs",
+              "DocumentMoniker": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Migrations\\20250505103450_AddStoredProcedures.cs",
               "RelativeDocumentMoniker": "MeetingMinutes\\Migrations\\20250505103450_AddStoredProcedures.cs",
-              "ToolTip": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Migrations\\20250505103450_AddStoredProcedures.cs",
+              "ToolTip": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Migrations\\20250505103450_AddStoredProcedures.cs",
               "RelativeToolTip": "MeetingMinutes\\Migrations\\20250505103450_AddStoredProcedures.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -85,9 +85,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "20250505093212_MakeFieldsNullable.cs",
-              "DocumentMoniker": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Migrations\\20250505093212_MakeFieldsNullable.cs",
+              "DocumentMoniker": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Migrations\\20250505093212_MakeFieldsNullable.cs",
               "RelativeDocumentMoniker": "MeetingMinutes\\Migrations\\20250505093212_MakeFieldsNullable.cs",
-              "ToolTip": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Migrations\\20250505093212_MakeFieldsNullable.cs",
+              "ToolTip": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Migrations\\20250505093212_MakeFieldsNullable.cs",
               "RelativeToolTip": "MeetingMinutes\\Migrations\\20250505093212_MakeFieldsNullable.cs",
               "ViewState": "AgIAAMYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -97,9 +97,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MeetingMinutesController.cs",
-              "DocumentMoniker": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Controllers\\MeetingMinutesController.cs",
+              "DocumentMoniker": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Controllers\\MeetingMinutesController.cs",
               "RelativeDocumentMoniker": "MeetingMinutes\\Controllers\\MeetingMinutesController.cs",
-              "ToolTip": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Controllers\\MeetingMinutesController.cs",
+              "ToolTip": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Controllers\\MeetingMinutesController.cs",
               "RelativeToolTip": "MeetingMinutes\\Controllers\\MeetingMinutesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -109,9 +109,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "MeetingMinutes\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Controllers\\HomeController.cs",
               "RelativeToolTip": "MeetingMinutes\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -121,9 +121,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Data\\ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "MeetingMinutes\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Hosting\\NexTGen\\MeetingMinutes\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "MeetingMinutes\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -133,9 +133,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Hosting\\NexTGen\\MeetingMinutes\\appsettings.json",
+              "DocumentMoniker": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\appsettings.json",
               "RelativeDocumentMoniker": "MeetingMinutes\\appsettings.json",
-              "ToolTip": "D:\\Hosting\\NexTGen\\MeetingMinutes\\appsettings.json",
+              "ToolTip": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\appsettings.json",
               "RelativeToolTip": "MeetingMinutes\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",

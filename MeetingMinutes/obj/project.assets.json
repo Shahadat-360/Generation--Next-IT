@@ -4717,11 +4717,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Hosting\\NexTGen\\MeetingMinutes\\MeetingMinutes.csproj",
+      "projectUniqueName": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\MeetingMinutes.csproj",
       "projectName": "MeetingMinutes",
-      "projectPath": "D:\\Hosting\\NexTGen\\MeetingMinutes\\MeetingMinutes.csproj",
+      "projectPath": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\MeetingMinutes.csproj",
       "packagesPath": "C:\\Users\\MD_Sh\\.nuget\\packages\\",
-      "outputPath": "D:\\Hosting\\NexTGen\\MeetingMinutes\\obj\\",
+      "outputPath": "D:\\Hosting\\NexTGen\\Generation--Next-IT\\MeetingMinutes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
