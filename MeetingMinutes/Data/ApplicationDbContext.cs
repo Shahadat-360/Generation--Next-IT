@@ -30,6 +30,11 @@ namespace MeetingMinutes.Data
                 .HasOne<MeetingMinutesMaster>()
                 .WithMany(m => m.Details)
                 .HasForeignKey(d => d.MeetingMinutesMasterId);
+                
+            // Configure decimal precision for Quantity
+            modelBuilder.Entity<MeetingMinutesDetail>()
+                .Property(d => d.Quantity)
+                .HasPrecision(18, 2);
         }
     }
 } 
