@@ -66,22 +66,25 @@ namespace MeetingMinutes.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(MeetingMinutesViewModel viewModel)
         {
+            // Always set customer name based on selected ID and type, even if ModelState is invalid
+            if (viewModel.MeetingMinutesMaster.CustomerType == "Corporate")
+            {
+                var customer = await _context.CorporateCustomers
+                    .FirstOrDefaultAsync(c => c.Id == viewModel.MeetingMinutesMaster.CustomerId);
+                viewModel.MeetingMinutesMaster.CustomerName = customer?.Name;
+            }
+            else
+            {
+                var customer = await _context.IndividualCustomers
+                    .FirstOrDefaultAsync(c => c.Id == viewModel.MeetingMinutesMaster.CustomerId);
+                viewModel.MeetingMinutesMaster.CustomerName = customer?.Name;
+            }
+            
+            // Clear the validation error for CustomerName since we've set it manually
+            ModelState.Remove("MeetingMinutesMaster.CustomerName");
+
             if (ModelState.IsValid)
             {
-                // Set customer name based on selected ID and type
-                if (viewModel.MeetingMinutesMaster.CustomerType == "Corporate")
-                {
-                    var customer = await _context.CorporateCustomers
-                        .FirstOrDefaultAsync(c => c.Id == viewModel.MeetingMinutesMaster.CustomerId);
-                    viewModel.MeetingMinutesMaster.CustomerName = customer?.Name;
-                }
-                else
-                {
-                    var customer = await _context.IndividualCustomers
-                        .FirstOrDefaultAsync(c => c.Id == viewModel.MeetingMinutesMaster.CustomerId);
-                    viewModel.MeetingMinutesMaster.CustomerName = customer?.Name;
-                }
-
                 // Use stored procedure to save master record
                 int masterId = await SaveMeetingMinutesMasterAsync(viewModel.MeetingMinutesMaster);
                 
@@ -189,24 +192,27 @@ namespace MeetingMinutes.Controllers
                 return NotFound();
             }
 
+            // Always set customer name based on selected ID and type, even if ModelState is invalid
+            if (viewModel.MeetingMinutesMaster.CustomerType == "Corporate")
+            {
+                var customer = await _context.CorporateCustomers
+                    .FirstOrDefaultAsync(c => c.Id == viewModel.MeetingMinutesMaster.CustomerId);
+                viewModel.MeetingMinutesMaster.CustomerName = customer?.Name;
+            }
+            else
+            {
+                var customer = await _context.IndividualCustomers
+                    .FirstOrDefaultAsync(c => c.Id == viewModel.MeetingMinutesMaster.CustomerId);
+                viewModel.MeetingMinutesMaster.CustomerName = customer?.Name;
+            }
+            
+            // Clear the validation error for CustomerName since we've set it manually
+            ModelState.Remove("MeetingMinutesMaster.CustomerName");
+
             if (ModelState.IsValid)
             {
                 try
                 {
-                    // Update customer name
-                    if (viewModel.MeetingMinutesMaster.CustomerType == "Corporate")
-                    {
-                        var customer = await _context.CorporateCustomers
-                            .FirstOrDefaultAsync(c => c.Id == viewModel.MeetingMinutesMaster.CustomerId);
-                        viewModel.MeetingMinutesMaster.CustomerName = customer?.Name;
-                    }
-                    else
-                    {
-                        var customer = await _context.IndividualCustomers
-                            .FirstOrDefaultAsync(c => c.Id == viewModel.MeetingMinutesMaster.CustomerId);
-                        viewModel.MeetingMinutesMaster.CustomerName = customer?.Name;
-                    }
-
                     // Use stored procedure to update master record
                     await SaveMeetingMinutesMasterAsync(viewModel.MeetingMinutesMaster);
 

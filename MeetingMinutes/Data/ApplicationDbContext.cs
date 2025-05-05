@@ -35,6 +35,16 @@ namespace MeetingMinutes.Data
             modelBuilder.Entity<MeetingMinutesDetail>()
                 .Property(d => d.Quantity)
                 .HasPrecision(18, 2);
+                
+            // Ignore removed fields from models that were in previous migrations
+            modelBuilder.Entity<CorporateCustomer>().Ignore("ContactPerson");
+            modelBuilder.Entity<CorporateCustomer>().Ignore("Email");
+            modelBuilder.Entity<CorporateCustomer>().Ignore("Phone");
+            modelBuilder.Entity<CorporateCustomer>().Ignore("Address");
+            
+            modelBuilder.Entity<IndividualCustomer>().Ignore("Email");
+            modelBuilder.Entity<IndividualCustomer>().Ignore("Phone");
+            modelBuilder.Entity<IndividualCustomer>().Ignore("Address");
         }
     }
 } 

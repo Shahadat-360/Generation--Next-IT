@@ -17,7 +17,7 @@ namespace MeetingMinutes.Models
         // For adding a new product/service
         public int SelectedProductServiceId { get; set; }
         public decimal ProductServiceQuantity { get; set; }
-        public string ProductServiceUnit { get; set; }
+        public string? ProductServiceUnit { get; set; }
         
         public MeetingMinutesViewModel()
         {
