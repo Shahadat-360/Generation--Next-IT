@@ -20,7 +20,8 @@ namespace MeetingMinutes.Controllers
         public MeetingMinutesController(ApplicationDbContext context, IConfiguration configuration)
         {
             _context = context;
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            _connectionString = configuration.GetConnectionString("DefaultConnection")
+                                ?? throw new ArgumentNullException(nameof(configuration), "Connection string 'DefaultConnection' is missing or null.");
         }
 
         // GET: MeetingMinutes

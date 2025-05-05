@@ -1,9 +1,19 @@
 using MeetingMinutes.Data;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
+var configuration = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json")
+    .Build();
+
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(configuration)
+    .CreateBootstrapLogger();
 
 try
 {
+    Log.Information("Starting up the application...");
     var builder = WebApplication.CreateBuilder(args);
 
     // Add services to the container.
@@ -39,5 +49,9 @@ try
 }
 catch(Exception ex)
 {
-    Console.WriteLine($"An error occurred: {ex.Message}");
+    Log.Fatal(ex, "Application start-up failed");
+}
+finally
+{
+    Log.CloseAndFlush();
 }
